@@ -1,0 +1,54 @@
+11.1
+a)
+	CLD
+	LEA	SI,NAME1
+	LEA	DI,NAME2
+	MOV	CX,05
+	REP	MOVSW
+;---------------------
+A10:
+	LEA	SI,NAME1
+	LEA	DI,NAME2
+	MOV	CX,10
+	MOV	AX,[SI]
+	MOV	[DI],AX
+	INC	SI
+	INC	SI
+	INC	DI
+	INC	DI
+	LOOP	A10
+
+Р В±)
+	CLD
+	LEA	SI,NAME1
+	MOV	CX,05
+	REP	LODSW
+;---------------------
+A10:
+	LEA	SI,NAME1
+	MOV	CX,10
+	MOV	AX,[SI]
+	INC	SI
+	INC	SI
+	LOOP	A10
+
+Р Р†)
+	CLD
+	LEA	DI,NAME1
+	MOV	CX,05
+	MOV	AX,2020H
+	REP	STOSW
+;---------------------
+A10:
+	LEA	DI,NAME1
+	MOV	CX,10
+	MOV	[DI],AX
+	INC	DI
+	INC	DI
+	LOOP	A10
+
+11.2
+EX112.ASM
+
+11.3
+EX113.ASM
