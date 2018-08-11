@@ -1,9 +1,0 @@
-		page	60,132
-		TITLE	EXDEF (EXE)
-;-------------------------------------
-DATASG	SEGMENT	PARA 'Data'
-FLD1DW	DW	0AAAAH
-FLD2DW	DW	0BBBBH
-FLD3DW	DW	0H
-DATASG	ENDS
-		END
